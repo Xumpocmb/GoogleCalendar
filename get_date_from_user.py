@@ -1,4 +1,14 @@
-import datetime
+from datetime import datetime
+
+
+def get_time():
+    start_time = datetime.fromisoformat("2023-08-11T10:00:00+03:00")
+    end_time = datetime.fromisoformat("2023-08-11T10:59:00+03:00")
+
+    time_difference = end_time - start_time
+    print(datetime.fromisoformat("2023-08-11T10:00:00+03:00").time())
+    print(datetime.fromisoformat("2023-08-11T10:00:00+03:00").date())
+    print(time_difference)
 
 
 def main():
@@ -12,4 +22,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    get_time()
